@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishi Raj - PPT & Academic Creator</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f7fa;
+        color: #333;
+    }
+    header {
+        background: linear-gradient(90deg, #4a90e2, #50e3c2);
+        color: #fff;
+        padding: 15px 10px; /* header height kam kiya */
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+        margin: 0;
+        font-size: 24px; /* thoda chhota font */
+    }
+    header p {
+        margin: 3px 0 0 0;
+        font-size: 14px;
+    }
+    .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        opacity: 1;
+        transform: translateY(0);
+    }
+    h2 {
+        color: #4a90e2;
+        margin-bottom: 10px;
+        border-left: 5px solid #e94e77;
+        padding-left: 10px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        padding: 5px 0;
+        font-size: 16px;
+    }
+    .skills li::before {
+        content: "✅";
+        padding-right: 10px;
+    }
+    footer {
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+        background: #eee;
+        border-top: 1px solid #ccc;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    a.blink {
+        color: #e94e77;
+        text-decoration: none;
+        animation: blink 1s linear infinite;
+    }
+    @keyframes blink {
+        0%, 50%, 100% {opacity: 1;}
+        25%, 75% {opacity: 0;}
+    }
+    .chat-box {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #50e3c2;
+        color: #fff;
+        border-radius: 12px;
+        padding: 15px;
+        cursor: pointer;
+        text-align: center;
+        font-weight: bold;
+        transition: background 0.3s ease;
+    }
+    .chat-box:hover {
+        background: #4a90e2;
+    }
+    .hidden-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease, padding 0.5s ease;
+        background: #fff;
+        color: #333;
+        margin: 10px auto;
+        padding: 0 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .hidden-content.show {
+        max-height: 300px;
+        padding: 15px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Rishi Raj</h1>
+    <p>BCA Student | PPT & Academic Content Creator | Coder 👨‍💻</p>
+</header>
+
+<div class="container" id="about">
+    <h2>About Me</h2>
+    <p>Can I make PPTs for your YouTube classes? Mujhe class PPTs aur notes banane ka kaafi experience hai. Agar aap allow karein, main ek chhota demo bana kar share kar sakta hoon.</p>
+    <p>Main <span style="color:#e94e77;font-weight:bold">Sanjay Sir</span> ke live classes ke objective questions se ek text-based quiz bhi bana sakta hoon, jise students website par aakar practice kar sakte hain.</p>
+</div>
+
+<div class="container" id="prepared">
+    <h2>What I’ve Prepared</h2>
+    <ul>
+        <li>Class 10th & 12th – All Subjects</li>
+        <li>Class 10th & 12th – Previous Year Questions (Objective + Subjective)</li>
+        <li>Official Bihar Board Model Papers – Last 5 Years</li>
+        <li>Sent-up Papers</li>
+        <li>Monthly & Half-Yearly Exam Papers (Available in Hindi & English)</li>
+    </ul>
+    <p>“Aapko bas bataana hai ki kya karna hai.”</p>
+</div>
+
+<div class="container" id="skills">
+    <h2>Skills & Experience</h2>
+    <ul class="skills">
+        <li>Structured notes aur question sets banane ka experience</li>
+        <li>MS Word, PowerPoint & formatting me skilled</li>
+        <li>Professional YouTube PPTs aur visual slides bana sakta hoon</li>
+        <li>Plus, I’m also a coder 👨‍💻</li>
+        <li>and many more sir ji </li>
+        <li>you can check my sec resume</li>
+    </ul>
+    <p>Main apna 100% dunga sir 💪. Bas ek mauka dijiye — mehnat aur dedication se prove kar dunga.</p>
+
+<footer>
+    my sec resume ↬ <a href="https://75raj.github.io/757/" target="_blank" rel="noopener noreferrer" class="blink">click me</a>
+</footer>
+
+<script>
+    // Chat box toggle
+    const chatBox = document.getElementById('chatBox');
+    const hiddenContent = document.getElementById('hiddenContent');
+
+    chatBox.addEventListener('click', () => {
+        hiddenContent.classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>
